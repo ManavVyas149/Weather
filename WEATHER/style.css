@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body
+{
+    background-image: url('weather.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 430px;
+    margin-top: 15rem;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.inputs {
+    padding: 1.5rem 0;
+    text-align: center;
+    background: rgba(198, 239, 255, 0.518);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.inputs input[type="text"] {
+    height: 3.5rem;
+    width: 100%;  
+    max-width: 300px;
+    background: #f9f9f9;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px;
+    border: 2px solid #d1d1d1;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.inputs input[type="text"]:focus {
+    border-color: #6200ea;
+    outline: none;
+}
+
+.inputs input[type="submit"] {
+    height: 3rem;
+    width: 8rem;
+    background: #6200ea;
+    font-weight: bold;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.inputs input[type="submit"]:hover {
+    background: #3700b3;
+}
+
+.display {
+    text-align: center;
+    width: 100%;
+    color: #16a864;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.wrapper {
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.wrapper h2 {
+        padding: 10px 0;
+        text-align: center;
+        background: #6200ea;
+        color: white;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        height: 50px;
+        line-height: 30px;
+}
+
+.wrapper p {
+    margin: 20px 0;
+    text-align: left;
+    color: #04214c;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.wrapper h2 span {
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+.wrapper p span {
+    color: #3700b3;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .inputs input[type="text"], .inputs input[type="submit"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .wrapper h2, .wrapper p {
+        font-size: 1rem;
+    }
+}
